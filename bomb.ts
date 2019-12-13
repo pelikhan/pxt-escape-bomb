@@ -2,10 +2,11 @@ basic.showString("BOMB")
 
 let state = 0;
 
-input.onButtonPressed(Button.A, function () {
+function win() {
     if (!state)
-        state = escape.BOMB_DEACTIVATED;
-})
+        state = escape.BOMB_DEACTIVATED;    
+}
+input.onPinPressed(TouchPin.P0, win)
 
 radio.onReceivedBuffer(b => {
     escape.logMessage(b);
