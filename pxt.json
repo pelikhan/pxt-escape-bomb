@@ -1,0 +1,17 @@
+{
+    "name": "escape-bomb",
+    "dependencies": {
+        "core": "*",
+        "radio": "*",
+        "escape": "github:pelikhan/pxt-escape#master"
+    },
+    "description": "",
+    "files": [
+        "main.ts",
+        "README.md"
+    ],
+    "preferredEditor": "tsprj",
+    "testFiles": [
+        "test.ts"
+    ]
+}
