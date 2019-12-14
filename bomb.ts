@@ -2,6 +2,11 @@ basic.showString("BOMB")
 
 let state = 0;
 
+function reset() {
+    state = 0;    
+}
+reset();
+
 function win() {
     if (!state)
         state = escape.BOMB_DEACTIVATED;    
@@ -11,6 +16,9 @@ input.onPinPressed(TouchPin.P0, win)
 radio.onReceivedBuffer(b => {
     escape.logMessage(b);
     switch(b[0]) {
+        case escape.RESET:
+            reset();
+            break;
         case escape.TIME_OVER:
             if (!state)
                 state = escape.TIME_OVER;
