@@ -1,6 +1,7 @@
 # pxt-escape-bomb ![Build status badge](https://github.com/pelikhan/pxt-escape-bomb/workflows/MakeCode/badge.svg)
 
-
+The detonator from the [escape](https://github.com/pelikhan/pxt-escape/bomb)
+room needs to be deactivated before the clock runs out.
 
 ## Use this extension
 
